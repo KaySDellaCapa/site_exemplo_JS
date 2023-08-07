@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="pt br">
+<head>
+	<meta charset="utf-8">
+	<meta name= "viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css"> <!--Vincula com o css-->
+	<title>Exemple JS</title>
+
+</head>
+<body>
+	<header>
+		<nav>
+			<a href="index.html"> < < Voltar </a>
+		</nav>
+
+		<h3>Della Capa's</h3>
+		<h4>Exemplo de Página Java Script</h4>
+	</header>
+
+<!--
+	<div class="buy">
+		<br>
+		<h5>Compre agora mesmo!</h5>
+		<br>
+		<button>COMPRE AQUI</button>
+		
+	</div> -->
+
+	<br><br><br><br>
+	
+	<br><br>
+	
+
+	</section>
+	<br><br>
+	<br>
+	<br><br>
+	<section class="container">
+		<h2>Férias</h2>
+		<p>De acordo com a lei trabalhista, o funcionário que sai de férias tem o direito de receber a remuneração mensal adiantada mais um adicional, que equivale a um terço do pagamento.</p>
+		<p>O valor total deve ser depositado na conta do funcionário até dois dias antes do início do período de descanso.</p>
+		<br><br>
+
+		<div class="resposta">		
+
+		<script type="text/javascript"> 
+		//precisa converter para parseFloat, para ler as duas casas decimais, para ler as virgulas
+
+				let salario = Number(prompt("Insira o seu atual salário. Informe as casas decimais com PONTO"));
+				parseFloat(salario.toFixed(2));
+
+				let abono = salario/3;
+				parseFloat(abono.toFixed(2));
+
+				let bruto = salario+abono
+				parseFloat(bruto.toFixed(2));
+
+				let imposto = bruto/100*9;
+				parseFloat(imposto.toFixed(2));
+
+				let liquido = bruto-imposto;
+				parseFloat(liquido.toFixed(2));
+
+				document.write("Salario informado: R$"+salario+"<br />"+"<br />"+"<br />");  //esses br são para pular linha
+				document.write("Abono de 1/3 R$"+"<br />"+abono+"<br />"+"<br />");
+				document.write("Valor bruto de férias: R$"+bruto+"<br />"+"<br />"+"<br />");
+				document.write("Valor de imposto: R$"+imposto+"<br />"+"<br />"+"<br />");
+				document.write("Valor a receber: R$"+liquido+"<br />"+"<br />"+"<br />");
+
+
+		</script>
+	</div>
+
+	</section>
+	
+	<br><br>
+	<br>
+
+	
+
+	<!--
+	<section class="container" id="formulario">
+		<h2>Selecione um produto para mais informações</h2>
+
+			<form action="#" method="get" target="_blank">
+			
+			<p class="formulario-contato">
+
+				<label for="nome">Nome</label><br>
+				<input class="dados-formulario" type="text" id="nome" name= "nome" placeholder="Insira seu nome">
+
+			</p>
+
+			<p class="formulario-contato">
+
+				<label for="nome">Contato</label><br>
+				<input class="dados-formulario" type="tel" id="tel" name= "tel" placeholder="Insira seu número">
+
+			</p>
+
+			<p class="formulario-contato">
+				<input type="checkbox" id="office" name="office" value="Cursos de Office">
+				<label for="office">Quero saber mais sobre o cursos de Office</label>
+				<br><br>
+
+				<input type="checkbox" id="web" name="web" value="Cursos de Front-End">
+				<label for="web">Quero saber mais sobre o cursos de Front-End Web</label>
+				<br><br>
+
+				<input type="checkbox" id="marketing" name="marketing" value="Cursos de Marketing">
+				<label for="marketing">Quero saber mais sobre o cursos de Front-End Web</label>
+				<br><br>
+
+				<label for="email">Email de preferencia</label><br>
+				<input type="text" id="email" name= "email" placeholder="Insira seu email principal">
+				<br><br>
+
+			</p>
+			<p class="formulario-contato">
+				<input type="submit" value="ENVIAR">
+				<input type="reset" value="LIMPAR">
+
+
+			</p>
+			
+			</form>
+
+	</section>-->
+
+	<br><br>
+
+	<footer>
+		<h4>Della Capa's</h4>
+		<h3>Exemplo de Página com Java Script</h3>
+		<br>
+		<p class ="text-footer">contatos:</p>
+		<p class ="text-footer">ksdellacapa@gmail.com</p>
+		<p class ="text-footer">11 965467317</p>
+		<p class ="text-footer">CNPJ:00.000.00./0001-00</p>
+	</footer>
+
+</html>
